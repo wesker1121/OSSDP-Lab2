@@ -43,7 +43,7 @@ public class L2022111793_16_Test {
     @Test
     public void testEdgeCaseWithZeroAndLargeNumber() {
         int[] nums = {0, 100, 1000};
-        String expected = "1001000";
+        String expected = "10010000";
         assertEquals(expected, solution.largestNumber(nums));
     }
 }

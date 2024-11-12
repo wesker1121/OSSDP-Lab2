@@ -24,6 +24,9 @@ class Solution {
             numsArr[i] = nums[i];
         }
 
+        Arrays.sort(numsArr, (x, y) -> (y.toString() + x.toString()).compareTo(x.toString() + y.toString()));
+
+        /*
         Arrays.sort(numsArr, (x, y) -> {
             long sx = 10, sy = 10;
             while (sx <= x) {
@@ -36,6 +39,7 @@ class Solution {
             return Long.compare(sy * x + y, sx * y + x);
 
         });
+        */
 
         if (numsArr[0] == 0) {
             return "0";
